@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="xdcao_taotao_springboot:war exploded">
+    <output-path>$PROJECT_DIR$/../xdcao_taotao_springboot/target/xdcao_taotao_springboot</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="xdcao_taotao_springboot" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../xdcao_taotao_springboot/target/xdcao_taotao_springboot/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="xdcao_taotao_springboot/web/Web" />
+    </root>
+  </artifact>
+</component>
