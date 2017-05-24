@@ -1,7 +1,10 @@
 package app.service;
 
 import app.mapper.ItemMapper;
+import app.model.DataGridResult;
 import app.pojo.Item;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -35,6 +38,16 @@ public class ItemService {
 
     public void deleteItemById(long id){
         itemMapper.delete(id);
+    }
+
+    public DataGridResult getItemListByPage(int page,int rows){
+        PageHelper.startPage(page,rows);
+        List<Item> items=itemMapper.getAll();
+        PageInfo<Item> pageInfo=new PageInfo<Item>(items);
+        DataGridResult dataGridResult=new DataGridResult();
+        dataGridResult.setTotal(pageInfo.getTotal());
+        dataGridResult.setRows(items);
+        return dataGridResult;
     }
 
 }
