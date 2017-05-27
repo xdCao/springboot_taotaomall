@@ -1,14 +1,12 @@
 package app.controller;
 
 import app.model.DataGridResult;
+import app.model.TaoTaoResult;
 import app.pojo.Item;
 import app.service.ItemService;
 import org.junit.runners.Parameterized;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Created by xdcao on 2017/5/23.
@@ -27,6 +25,11 @@ public class ItemController {
     @RequestMapping(value = "/item/list")
     public DataGridResult getItemListByPage(@RequestParam Integer page,@RequestParam Integer rows){
         return itemService.getItemListByPage(page,rows);
+    }
+
+    @RequestMapping(value = "/item/save",method = RequestMethod.POST)
+    public TaoTaoResult saveItem(Item item,String desc){
+        return itemService.insertItem(item, desc);
     }
 
 }

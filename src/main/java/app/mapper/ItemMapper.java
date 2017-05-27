@@ -29,6 +29,7 @@ public interface ItemMapper {
 
     @Select("select * from tb_item where id=#{id}")
     @Results({
+            @Result(property = "id",column = "id"),
             @Result(property = "title",column = "title"),
             @Result(property = "sell_point",column = "sell_point"),
             @Result(property = "price",column = "price"),
@@ -43,8 +44,8 @@ public interface ItemMapper {
     Item getOne(long id);
 
 
-    @Insert("insert into tb_item(title,sell_point,price,num,barcode,image,cid,status,created,updated) values " +
-            "(#{title},#{sell_point},#{price},#{num},#{barcode},#{image},#{cid},#{status},#{created},#{updated})")
+    @Insert("insert into tb_item(id,title,sell_point,price,num,barcode,image,cid,status,created,updated) values " +
+            "(#{id},#{title},#{sell_point},#{price},#{num},#{barcode},#{image},#{cid},#{status},#{created},#{updated})")
     void insert(Item item);
 
     @Update("update tb_item set title=#{title},sell_point=#{sell_point},price=#{price},num=#{num},barcode=#{barcode}," +
