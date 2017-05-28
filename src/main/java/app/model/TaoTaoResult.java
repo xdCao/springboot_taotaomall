@@ -9,6 +9,9 @@ public class TaoTaoResult {
     private String message;
     private Object data;
 
+    public TaoTaoResult() {
+    }
+
     public TaoTaoResult(Integer status, String message, Object data) {
         this.status = status;
         this.message = message;

@@ -30,6 +30,18 @@ public interface ItemParamMapper {
     })
     ItemParam getOne(long id);
 
+
+    @Select("select * from tb_item_param where item_cat_id=#{cid}")
+    @Results({
+            @Result(property = "id",column = "id"),
+            @Result(property = "item_cat_id",column = "item_cat_id"),
+            @Result(property = "param_data",column = "param_data"),
+            @Result(property = "created",column = "created"),
+            @Result(property = "updated",column = "updated")
+    })
+    List<ItemParam> getItemParamsByCid(long cid);
+
+
     @Insert("insert into tb_item_param (item_cat_id,param_data,created,updated) values (#{item_cat_id},#{param_data},#{created},#{updated})")
     void insert(ItemParam itemParam);
 
@@ -38,5 +50,8 @@ public interface ItemParamMapper {
 
     @Delete("delete from tb_item_param where id=#{id}")
     void delete(long id);
+
+
+
 
 }

@@ -2,6 +2,7 @@ package app.service;
 
 import app.mapper.ItemParamMapper;
 import app.model.DataGridResult;
+import app.model.TaoTaoResult;
 import app.pojo.Item;
 import app.pojo.ItemParam;
 import com.github.pagehelper.PageHelper;
@@ -28,6 +29,23 @@ public class ItemParamService {
         dataGridResult.setTotal(pageInfo.getTotal());
         dataGridResult.setRows(items);
         return dataGridResult;
+    }
+
+    public TaoTaoResult checkParamExsitence(long cid){
+
+        TaoTaoResult result=new TaoTaoResult();
+        result.setStatus(200);
+        result.setMessage("ok");
+
+        List<ItemParam> itemParams=itemParamMapper.getItemParamsByCid(cid);
+        if (itemParams!=null&&itemParams.size()>0){
+            result.setData(itemParams.get(0));
+            return result;
+        }else {
+            result.setData(null);
+            return result;
+        }
+
     }
 
 
