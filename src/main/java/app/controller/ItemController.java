@@ -28,8 +28,8 @@ public class ItemController {
     }
 
     @RequestMapping(value = "/item/save",method = RequestMethod.POST)
-    public TaoTaoResult saveItem(Item item,String desc){
-        return itemService.insertItem(item, desc);
+    public TaoTaoResult saveItem(Item item,String desc,String itemParams){
+        return itemService.insertItem(item, desc,itemParams);
     }
 
 }

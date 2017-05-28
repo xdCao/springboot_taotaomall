@@ -2,10 +2,12 @@ package app.service;
 
 import app.mapper.ItemDescMapper;
 import app.mapper.ItemMapper;
+import app.mapper.ItemParamItemMapper;
 import app.model.DataGridResult;
 import app.model.TaoTaoResult;
 import app.pojo.Item;
 import app.pojo.ItemDesc;
+import app.pojo.ItemParamItem;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +30,9 @@ public class ItemService {
     @Autowired
     private ItemDescMapper itemDescMapper;
 
+    @Autowired
+    private ItemParamItemMapper itemParamItemMapper;
+
     public Item getItemById(long id){
         return itemMapper.getOne(id);
     }
@@ -38,12 +43,13 @@ public class ItemService {
     }
 
     @Transactional(propagation = Propagation.REQUIRED)
-    public TaoTaoResult insertItem(Item item, String desc){
+    public TaoTaoResult insertItem(Item item, String desc,String itemParams){
         long id=System.currentTimeMillis();
         item.setId(id);
         item.setStatus(1);
-        item.setCreated(new Date());
-        item.setUpdated(new Date());
+        Date date=new Date();
+        item.setCreated(date);
+        item.setUpdated(date);
         itemMapper.insert(item);
         ItemDesc itemDesc=new ItemDesc();
         itemDesc.setItem_id(id);
@@ -51,6 +57,13 @@ public class ItemService {
         itemDesc.setCreated(item.getCreated());
         itemDesc.setUpdated(item.getUpdated());
         itemDescMapper.insert(itemDesc);
+        ItemParamItem itemParamItem=new ItemParamItem();
+        itemParamItem.setItem_id(id);
+        itemParamItem.setParam_data(itemParams);
+        itemParamItem.setCreated(date);
+        itemParamItem.setUpdated(date);
+        itemParamItemMapper.insert(itemParamItem);
+
         return new TaoTaoResult(200,"ok",null);
     }
 
