@@ -72,17 +72,17 @@
 
                     //加载商品规格
                     $.getJSON('/rest/item/param/item/query/'+data.id,function(_data){
-                        if(_data && _data.status == 200 && _data.data && _data.data.paramData){
+                        if(_data && _data.status == 200 && _data.data && _data.data.param_data){
                             $("#itemeEditForm .params").show();
-                            $("#itemeEditForm [name=itemParams]").val(_data.data.paramData);
+                            $("#itemeEditForm [name=itemParams]").val(_data.data.param_data);
                             $("#itemeEditForm [name=itemParamId]").val(_data.data.id);
 
                             //回显商品规格
-                            var paramData = JSON.parse(_data.data.paramData);
+                            var param_data = JSON.parse(_data.data.param_data);
 
                             var html = "<ul>";
-                            for(var i in paramData){
-                                var pd = paramData[i];
+                            for(var i in param_data){
+                                var pd = param_data[i];
                                 html+="<li><table>";
                                 html+="<tr><td colspan=\"2\" class=\"group\">"+pd.group+"</td></tr>";
 

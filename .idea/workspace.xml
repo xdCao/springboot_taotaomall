@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff451ee9-d559-4ab5-8a7c-f3eb442ce88d" name="Default" comment="">
+    <list default="true" id="ff451ee9-d559-4ab5-8a7c-f3eb442ce88d" name="Default" comment="保存规格参数模板">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-edit.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/controller/ItemParamController.java" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/controller/ItemParamController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/service/ItemParamService.java" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/service/ItemParamService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-list.html" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-list.html" />
     </list>
     <ignored path="$PROJECT_DIR$/../xdcao_taotao_springboot/out/" />
     <ignored path="$PROJECT_DIR$/../xdcao_taotao_springboot/target/" />
@@ -24,8 +26,8 @@
       <file leaf-file-name="ItemParamController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/controller/ItemParamController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+            <state relative-caret-position="648">
+              <caret line="46" column="54" lean-forward="false" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,8 +38,8 @@
       <file leaf-file-name="ItemParamService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/service/ItemParamService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="62" column="28" lean-forward="false" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
+            <state relative-caret-position="515">
+              <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#834#845#0" expanded="true" />
@@ -46,72 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaoTaoResult.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/model/TaoTaoResult.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemParamMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ItemParamMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/controller/PageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-              <folding>
-                <element signature="e#615#616#0" expanded="true" />
-                <element signature="e#660#661#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item-param-add.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-param-add.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-228">
-              <caret line="21" column="58" lean-forward="true" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
-              <folding>
-                <element signature="n#style#0;n#table#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#td#1;n#tr#0;n#table#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#li#0;n#ul#0;n#li#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#li#1;n#ul#0;n#li#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemParam.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/pojo/ItemParam.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="item-param-list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-param-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="79" column="4" lean-forward="false" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="7" />
+            <state relative-caret-position="406">
+              <caret line="65" column="23" lean-forward="true" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -128,6 +69,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>paramData</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>param_data</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../xdcao_taotao_springboot" />
   </component>
@@ -139,8 +88,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/pojo/pom.xml" />
-        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/taotao_app.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/pojo/UserPojo.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/test/UserMapperTest.java" />
@@ -163,7 +110,6 @@
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/config/MyBatisConfig.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/test/SqlPageTest.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/model/DataGridResult.java" />
-        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-list.html" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/pojo/ItemCat.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ItemCatMapper.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/model/TreeNodeResult.java" />
@@ -188,6 +134,9 @@
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-param-add.html" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ItemParamMapper.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/model/TaoTaoResult.java" />
+        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-edit.html" />
+        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/js/common.js" />
+        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-list.html" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/service/ItemParamService.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/controller/ItemParamController.java" />
       </list>
@@ -616,6 +565,7 @@
     <property name="project.structure.proportion" value="0.15234375" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../fastdfs_client_v1.24.jar!/" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1184,7 +1134,7 @@
       <workItem from="1495543984249" duration="18486000" />
       <workItem from="1495702219768" duration="9780000" />
       <workItem from="1495790802476" duration="10136000" />
-      <workItem from="1495964386309" duration="8281000" />
+      <workItem from="1495964386309" duration="12184000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1495467455872</created>
@@ -1277,7 +1227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495991786882</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="保存规格参数模板">
+      <created>1495993852820</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1495993852820</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1313,7 +1270,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64160000" />
+    <option name="totallyTimeSpent" value="68063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -1338,7 +1295,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32735425" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5100897" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847533" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26222494" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1373,7 +1330,8 @@
     <MESSAGE value="添加商品功能" />
     <MESSAGE value="规格参数展示" />
     <MESSAGE value="检查规格参数是否存在" />
-    <option name="LAST_COMMIT_MESSAGE" value="检查规格参数是否存在" />
+    <MESSAGE value="保存规格参数模板" />
+    <option name="LAST_COMMIT_MESSAGE" value="保存规格参数模板" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1386,8 +1344,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/images/17.png" />
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/images/18.png" />
     <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/images/22.jpg" />
     <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/css/images/28.png" />
     <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/images/cue.png" />
@@ -1419,13 +1375,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="62" column="76" lean-forward="false" selection-start-line="62" selection-start-column="76" selection-end-line="62" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="31" column="16" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1615,25 +1564,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304">
-          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/pojo/Item.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1672,33 +1606,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-param-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="79" column="4" lean-forward="false" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/pojo/ItemParam.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-param-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <caret line="21" column="58" lean-forward="true" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
-          <folding>
-            <element signature="n#style#0;n#table#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#0;n#table#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#li#0;n#ul#0;n#li#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#li#1;n#ul#0;n#li#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1720,10 +1632,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" column="16" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-param-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="98" column="29" lean-forward="true" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#0;n#table#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#li#0;n#ul#0;n#li#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#li#1;n#ul#0;n#li#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="197" column="42" lean-forward="true" selection-start-line="197" selection-start-column="42" selection-end-line="197" selection-end-column="42" />
+          <folding>
+            <marker date="1496000686336" expanded="true" signature="1425:1435" ph="..." />
+            <marker date="1496000686336" expanded="true" signature="1847:1887" ph="..." />
+            <marker date="1496000686336" expanded="true" signature="3186:3203" ph="..." />
+            <marker date="1496000686336" expanded="true" signature="3273:3290" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="71" column="19" lean-forward="true" selection-start-line="71" selection-start-column="19" selection-end-line="71" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="79" column="36" lean-forward="true" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#0;n#table#0;n#form#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#1;n#table#0;n#form#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#2;n#table#0;n#form#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#td#1;n#tr#7;n#table#0;n#form#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-param-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="65" column="23" lean-forward="true" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/service/ItemParamService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="62" column="28" lean-forward="false" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
+        <state relative-caret-position="515">
+          <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#834#845#0" expanded="true" />
@@ -1733,8 +1721,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/controller/ItemParamController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        <state relative-caret-position="648">
+          <caret line="46" column="54" lean-forward="false" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

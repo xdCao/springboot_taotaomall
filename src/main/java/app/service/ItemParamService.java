@@ -64,5 +64,14 @@ public class ItemParamService {
     }
 
 
+    @Transactional
+    public TaoTaoResult deleteItemParams(List<Long> ids){
+        for (Long id:ids){
+            itemParamMapper.delete(id);
+        }
+        return new TaoTaoResult(200,"ok",null);
+    }
+
+
 
 }

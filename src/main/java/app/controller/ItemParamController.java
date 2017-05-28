@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.List;
+
 /**
  * Created by xdcao on 2017/5/28.
  */
@@ -37,6 +39,12 @@ public class ItemParamController {
     @ResponseBody
     public TaoTaoResult saveItemParam(@PathVariable Long cid,@RequestParam String paramData){
         return itemParamService.saveItemParam(cid,paramData);
+    }
+
+    @RequestMapping(value = "/item/param/delete")
+    @ResponseBody
+    public TaoTaoResult deleteItemParams(@RequestParam List<Long> ids){
+        return itemParamService.deleteItemParams(ids);
     }
 
 }
