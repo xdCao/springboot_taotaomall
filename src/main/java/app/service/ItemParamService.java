@@ -9,7 +9,9 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -46,6 +48,19 @@ public class ItemParamService {
             return result;
         }
 
+    }
+
+    @Transactional
+    public TaoTaoResult saveItemParam(Long cid,String paramData){
+        ItemParam itemParam=new ItemParam();
+        itemParam.setItem_cat_id(cid);
+        itemParam.setParam_data(paramData);
+        Date date=new Date();
+        itemParam.setCreated(date);
+        itemParam.setUpdated(date);
+        itemParamMapper.insert(itemParam);
+        TaoTaoResult taoTaoResult=new TaoTaoResult(200,"ok",null);
+        return taoTaoResult;
     }
 
 

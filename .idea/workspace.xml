@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff451ee9-d559-4ab5-8a7c-f3eb442ce88d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-param-add.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/controller/ItemParamController.java" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/controller/ItemParamController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ItemParamMapper.java" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ItemParamMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/model/TaoTaoResult.java" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/model/TaoTaoResult.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/service/ItemParamService.java" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/service/ItemParamService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../xdcao_taotao_springboot/out/" />
@@ -24,11 +21,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ItemParamController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ItemParamController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/controller/ItemParamController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+            <state relative-caret-position="179">
+              <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,14 +33,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItemParamService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ItemParamService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/service/ItemParamService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+            <state relative-caret-position="585">
+              <caret line="62" column="28" lean-forward="false" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#746#757#0" expanded="true" />
+                <element signature="e#834#845#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,7 +59,7 @@
       <file leaf-file-name="ItemParamMapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ItemParamMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
+            <state relative-caret-position="38">
               <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -189,10 +186,10 @@
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/pojo/ItemParam.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-param-list.html" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-param-add.html" />
-        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/controller/ItemParamController.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ItemParamMapper.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/model/TaoTaoResult.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/service/ItemParamService.java" />
+        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/controller/ItemParamController.java" />
       </list>
     </option>
   </component>
@@ -1187,7 +1184,7 @@
       <workItem from="1495543984249" duration="18486000" />
       <workItem from="1495702219768" duration="9780000" />
       <workItem from="1495790802476" duration="10136000" />
-      <workItem from="1495964386309" duration="6279000" />
+      <workItem from="1495964386309" duration="8281000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1495467455872</created>
@@ -1273,7 +1270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495962053813</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="检查规格参数是否存在">
+      <created>1495991786881</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1495991786882</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1309,7 +1313,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62158000" />
+    <option name="totallyTimeSpent" value="64160000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -1698,26 +1702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ItemParamMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/controller/ItemParamController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/model/TaoTaoResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -1726,13 +1710,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/service/ItemParamService.java">
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ItemParamMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+        <state relative-caret-position="38">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#746#757#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/service/ItemParamService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="62" column="28" lean-forward="false" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#834#845#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/controller/ItemParamController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

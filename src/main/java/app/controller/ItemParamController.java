@@ -33,4 +33,10 @@ public class ItemParamController {
         return itemParamService.checkParamExsitence(cid);
     }
 
+    @RequestMapping(value = "/item/param/save/{cid}")
+    @ResponseBody
+    public TaoTaoResult saveItemParam(@PathVariable Long cid,@RequestParam String paramData){
+        return itemParamService.saveItemParam(cid,paramData);
+    }
+
 }
