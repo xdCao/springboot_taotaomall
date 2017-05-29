@@ -1,4 +1,4 @@
-package app.service;
+package app.manager.service;
 
 import app.model.PictureResult;
 import org.springframework.stereotype.Service;

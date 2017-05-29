@@ -1,9 +1,8 @@
-package app.controller;
+package app.manager.controller;
 
 import app.model.DataGridResult;
 import app.model.TaoTaoResult;
-import app.pojo.ItemParam;
-import app.service.ItemParamService;
+import app.manager.service.ItemParamService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;

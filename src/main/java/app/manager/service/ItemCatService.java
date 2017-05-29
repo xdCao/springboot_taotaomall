@@ -1,8 +1,7 @@
-package app.service;
+package app.manager.service;
 
 import app.mapper.ItemCatMapper;
 import app.model.TreeNodeResult;
-import app.pojo.Item;
 import app.pojo.ItemCat;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

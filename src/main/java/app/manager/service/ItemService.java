@@ -1,4 +1,4 @@
-package app.service;
+package app.manager.service;
 
 import app.mapper.ItemDescMapper;
 import app.mapper.ItemMapper;

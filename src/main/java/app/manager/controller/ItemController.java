@@ -1,10 +1,9 @@
-package app.controller;
+package app.manager.controller;
 
 import app.model.DataGridResult;
 import app.model.TaoTaoResult;
 import app.pojo.Item;
-import app.service.ItemService;
-import org.junit.runners.Parameterized;
+import app.manager.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

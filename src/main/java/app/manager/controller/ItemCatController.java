@@ -1,8 +1,7 @@
-package app.controller;
+package app.manager.controller;
 
 import app.model.TreeNodeResult;
-import app.service.ItemCatService;
-import org.apache.ibatis.annotations.Result;
+import app.manager.service.ItemCatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

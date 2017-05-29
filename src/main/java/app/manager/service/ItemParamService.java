@@ -1,9 +1,8 @@
-package app.service;
+package app.manager.service;
 
 import app.mapper.ItemParamMapper;
 import app.model.DataGridResult;
 import app.model.TaoTaoResult;
-import app.pojo.Item;
 import app.pojo.ItemParam;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;

@@ -1,6 +1,5 @@
-package app.controller;
+package app.manager.controller;
 
-import org.springframework.boot.autoconfigure.web.WebMvcProperties;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,9 +16,9 @@ public class PageController {
         return new ModelAndView("index");
     }
 
-    @RequestMapping(value = "/{page}")
+    @RequestMapping(value = "/manager/{page}")
     public ModelAndView page(@PathVariable String page){
-        return new ModelAndView(page);
+        return new ModelAndView("manager/"+page);
     }
 
 
