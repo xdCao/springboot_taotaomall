@@ -1,9 +1,7 @@
 package app.mapper;
 
 import app.pojo.ContentCat;
-import org.apache.ibatis.annotations.Result;
-import org.apache.ibatis.annotations.Results;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 
 import javax.validation.constraints.Max;
 import java.util.List;
@@ -51,5 +49,13 @@ public interface ContentCatMapper {
             @Result(property = "updated",column = "updated")
     })
     List<ContentCat> getContentCatByParentId(long parentId);
+
+    @Insert("insert into tb_content_category (parent_id,name,status,sort_order,is_parent,created,updated) " +
+            "values (#{parent_id},#{name},#{status},#{sort_order},#{is_parent},#{created},#{updated})")
+    @SelectKey(statement ="select last_insert_id()" , keyProperty = "id", keyColumn = "id", before = false, resultType = Long.class)
+    void insert(ContentCat contentCat);
+
+    @Update("update tb_content_category set parent_id=#{parent_id},name=#{name},status=#{status},sort_order=#{sort_order},is_parent=#{is_parent},updated=#{updated} where id=#{id}")
+    void update(ContentCat contentCat);
 
 }
