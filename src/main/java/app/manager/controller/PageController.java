@@ -11,10 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class PageController {
 
-    @RequestMapping(value = "/")
-    public ModelAndView index(){
-        return new ModelAndView("index");
-    }
+
 
     @RequestMapping(value = "/manager/{page}")
     public ModelAndView page(@PathVariable String page){
