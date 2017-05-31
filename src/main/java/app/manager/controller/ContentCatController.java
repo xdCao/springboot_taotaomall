@@ -35,10 +35,18 @@ public class ContentCatController {
     }
 
 
-//    @RequestMapping(value = "/update")
-//
-//
-//    @RequestMapping(value = "/delete")
+    @RequestMapping(value = "/update")
+    @ResponseBody
+    public void updateContentCat(Long id,String name){
+        contentCatService.updateContentCat(id,name);
+    }
+
+
+    @RequestMapping(value = "/delete")
+    @ResponseBody
+    public void deleteContentCat(Long id){
+        contentCatService.deleteContentCat(id);
+    }
 
 
 }

@@ -58,4 +58,7 @@ public interface ContentCatMapper {
     @Update("update tb_content_category set parent_id=#{parent_id},name=#{name},status=#{status},sort_order=#{sort_order},is_parent=#{is_parent},updated=#{updated} where id=#{id}")
     void update(ContentCat contentCat);
 
+    @Delete("delete from tb_content_category where id=#{id}")
+    void delete(long id);
+
 }

@@ -57,4 +57,33 @@ public class ContentCatService {
     }
 
 
+    @Transactional
+    public void updateContentCat(long id,String name){
+
+        ContentCat contentCat=contentCatMapper.getOne(id);
+        contentCat.setName(name);
+        contentCat.setUpdated(new Date());
+        contentCatMapper.update(contentCat);
+
+    }
+
+    @Transactional
+    public void deleteContentCat(long id){
+
+        deleteNode(id);
+    }
+
+    private void deleteNode(long id) {
+        ContentCat thisNode=contentCatMapper.getOne(id);
+        if(!thisNode.isIs_parent()){
+            contentCatMapper.delete(id);
+        }else {
+            List<ContentCat> contentCats=contentCatMapper.getContentCatByParentId(id);
+            for (ContentCat contentCat:contentCats){
+                deleteNode(contentCat.getId());
+            }
+            contentCatMapper.delete(id);
+        }
+    }
+
 }
