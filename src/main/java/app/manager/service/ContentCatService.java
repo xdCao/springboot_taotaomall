@@ -43,6 +43,7 @@ public class ContentCatService {
         contentCat.setName(name);
         contentCat.setStatus(1);
         contentCat.setSort_order(1);
+        contentCat.setIs_parent(false);
         Date date=new Date();
         contentCat.setCreated(date);
         contentCat.setUpdated(date);

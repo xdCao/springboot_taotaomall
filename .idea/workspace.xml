@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ff451ee9-d559-4ab5-8a7c-f3eb442ce88d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/controller/ContentCatController.java" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/controller/ContentCatController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ContentCatService.java" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ContentCatService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ContentCatMapper.java" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ContentCatMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/taotao_app.java" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/taotao_app.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/application.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/../xdcao_taotao_springboot/out/" />
@@ -62,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContentCatService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ContentCatService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ContentCatService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+            <state relative-caret-position="305">
+              <caret line="51" column="39" lean-forward="true" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+            <state relative-caret-position="114">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -97,8 +94,8 @@
       <file leaf-file-name="MyBatisConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/config/MyBatisConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+            <state relative-caret-position="76">
+              <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -185,10 +182,10 @@
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/pojo/ContentCat.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/controller/PageController.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ContentCatMapper.java" />
-        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ContentCatService.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/controller/ContentCatController.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/taotao_app.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ContentCatService.java" />
       </list>
     </option>
   </component>
@@ -1256,7 +1253,7 @@
       <workItem from="1495702219768" duration="9780000" />
       <workItem from="1495790802476" duration="10136000" />
       <workItem from="1495964386309" duration="37095000" />
-      <workItem from="1496130435888" duration="8431000" />
+      <workItem from="1496130435888" duration="11306000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1495467455872</created>
@@ -1391,7 +1388,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496158887328</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="更新和删除内容分类节点(druid、mybatis的事务有些问题，居然是默认提交的，后面要找找办法)">
+      <created>1496245746827</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1496245746827</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1427,11 +1431,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101405000" />
+    <option name="totallyTimeSpent" value="104280000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1452,11 +1455,11 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2679372" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2679372" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847533" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26528117" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1493,7 +1496,8 @@
     <MESSAGE value="前台首页和商品类目展示" />
     <MESSAGE value="内容分类列表展示" />
     <MESSAGE value="添加内容分类节点" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加内容分类节点" />
+    <MESSAGE value="更新和删除内容分类节点(druid、mybatis的事务有些问题，居然是默认提交的，后面要找找办法)" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新和删除内容分类节点(druid、mybatis的事务有些问题，居然是默认提交的，后面要找找办法)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1506,20 +1510,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ItemParamMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ItemParamItemMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ItemService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
@@ -1893,16 +1883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ContentCatService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/taotao_app.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1911,19 +1891,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/config/MyBatisConfig.java">
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+        <state relative-caret-position="114">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/application.properties">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-tx/4.2.5.RELEASE/spring-tx-4.2.5.RELEASE.jar!/org/springframework/transaction/PlatformTransactionManager.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        <state relative-caret-position="76">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/javax/sql/DataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="76" column="17" lean-forward="false" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/config/MyBatisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ContentCatService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="51" column="39" lean-forward="true" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
