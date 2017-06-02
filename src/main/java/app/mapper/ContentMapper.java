@@ -26,6 +26,22 @@ public interface ContentMapper {
     })
     List<Content> getAll();
 
+    @Select("select * from tb_content where category_id=#{categoryId}")
+    @Results({
+            @Result(property = "id",column = "id"),
+            @Result(property = "category_id",column = "category_id"),
+            @Result(property = "title",column = "title"),
+            @Result(property = "sub_title",column = "sub_title"),
+            @Result(property = "title_desc",column = "title_desc"),
+            @Result(property = "url",column = "url"),
+            @Result(property = "pic",column = "pic"),
+            @Result(property = "pic2",column = "pic2"),
+            @Result(property = "content",column = "content"),
+            @Result(property = "created",column = "created"),
+            @Result(property = "updated",column = "updated")
+    })
+    List<Content> getByCatId(Long categoryId);
+
     @Select("select * from tb_content where id=#{id}")
     @Results({
             @Result(property = "category_id",column = "category_id"),

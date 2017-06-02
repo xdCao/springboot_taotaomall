@@ -3,6 +3,7 @@ package app.manager.service;
 import app.mapper.ContentCatMapper;
 import app.model.TaoTaoResult;
 import app.model.TreeNodeResult;
+import app.pojo.Content;
 import app.pojo.ContentCat;
 import app.pojo.ItemCat;
 import com.sun.xml.internal.ws.server.ServerRtException;
@@ -78,6 +79,14 @@ public class ContentCatService {
         ContentCat thisNode=contentCatMapper.getOne(id);
         if(!thisNode.isIs_parent()){
             contentCatMapper.delete(id);
+            ContentCat parent=contentCatMapper.getOne(thisNode.getParent_id());
+            List<ContentCat> contentCats=contentCatMapper.getContentCatByParentId(thisNode.getParent_id());
+            if(contentCats!=null&&contentCats.size()>0){
+
+            }else {
+                parent.setIs_parent(false);
+                contentCatMapper.update(parent);
+            }
         }else {
             List<ContentCat> contentCats=contentCatMapper.getContentCatByParentId(id);
             for (ContentCat contentCat:contentCats){
