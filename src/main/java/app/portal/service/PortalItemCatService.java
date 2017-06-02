@@ -6,6 +6,7 @@ import app.model.CatNode;
 import app.pojo.ItemCat;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -20,12 +21,14 @@ public class PortalItemCatService {
     @Autowired
     private ItemCatMapper itemCatMapper;
 
+    @Cacheable(value = "portalitemCat",keyGenerator = "wiselyKeyGenerator")
     public CatItemResult getAllCats(){
         List result=getCatsByParentId(0);
         CatItemResult catItemResult=new CatItemResult();
         catItemResult.setData(result);
         return catItemResult;
     }
+
 
     private List getCatsByParentId(long parentId){
 

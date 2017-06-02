@@ -4,6 +4,7 @@ import app.mapper.ItemCatMapper;
 import app.model.TreeNodeResult;
 import app.pojo.ItemCat;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -18,6 +19,7 @@ public class ItemCatService {
     @Autowired
     private ItemCatMapper itemCatMapper;
 
+    @Cacheable(value = "itemCatCache",keyGenerator = "wiselyKeyGenerator")
     public List<TreeNodeResult> getItemCatTree(long parent_id){
         List<ItemCat> itemCats=itemCatMapper.getByParentId(parent_id);
         List<TreeNodeResult> treeNodeResults=new ArrayList<TreeNodeResult>();

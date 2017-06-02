@@ -8,6 +8,8 @@ import app.pojo.ContentCat;
 import app.pojo.ItemCat;
 import com.sun.xml.internal.ws.server.ServerRtException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -24,6 +26,7 @@ public class ContentCatService {
     @Autowired
     private ContentCatMapper contentCatMapper;
 
+    @Cacheable(value = "contentCatCache",keyGenerator = "wiselyKeyGenerator")
     public List<TreeNodeResult> getContentCatTree(long parent_id){
         List<ContentCat> contentCats=contentCatMapper.getContentCatByParentId(parent_id);
         List<TreeNodeResult> treeNodeResults=new ArrayList<TreeNodeResult>();
@@ -38,6 +41,7 @@ public class ContentCatService {
     }
 
     @Transactional
+    @CacheEvict(value = "contentCatCache",keyGenerator = "wiselyKeyGenerator")
     public TaoTaoResult createNewContentCat(long parentId,String name){
         ContentCat contentCat=new ContentCat();
         contentCat.setParent_id(parentId);
@@ -60,6 +64,7 @@ public class ContentCatService {
 
 
     @Transactional
+    @CacheEvict(value = "contentCatCache",keyGenerator = "wiselyKeyGenerator")
     public void updateContentCat(long id,String name){
 
         ContentCat contentCat=contentCatMapper.getOne(id);
@@ -70,6 +75,7 @@ public class ContentCatService {
     }
 
     @Transactional
+    @CacheEvict(value = "contentCatCache",keyGenerator = "wiselyKeyGenerator")
     public void deleteContentCat(long id){
 
         deleteNode(id);
