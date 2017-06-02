@@ -2,8 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff451ee9-d559-4ab5-8a7c-f3eb442ce88d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/solr" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/.idea/libraries/Maven__org_apache_solr_solr_solrj_5_5_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_3_1_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/.idea/libraries/Maven__org_codehaus_woodstox_woodstox_core_asl_4_4_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/.idea/libraries/Maven__org_noggit_noggit_0_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_solr_1_5_3_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/.idea/libraries/Maven__org_springframework_data_spring_data_solr_2_1_3_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/controller/SolrController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/SolrService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/SolrMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/pojo/SolrItem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/test/SolrMapperTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/pom.xml" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/xdcao_taotao_springboot.iml" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/xdcao_taotao_springboot.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_12_5_RELEASE.xml" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_3_RELEASE.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/../xdcao_taotao_springboot/out/" />
     <ignored path="$PROJECT_DIR$/../xdcao_taotao_springboot/target/" />
@@ -20,28 +36,58 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PortalItemCatService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PortalItemCatService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/portal/service/PortalItemCatService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+            <state relative-caret-position="361">
+              <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RedisConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/config/RedisConfig.java">
+      <file leaf-file-name="SolrMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/SolrMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+            <state relative-caret-position="437">
+              <caret line="23" column="64" lean-forward="false" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1109#1545#0" expanded="true" />
-                <element signature="e#1544#1545#0" expanded="true" />
-                <element signature="e#1629#1630#0" expanded="true" />
-                <element signature="e#1688#1689#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SolrService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/SolrService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="32" column="44" lean-forward="true" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SolrController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/controller/SolrController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,49 +95,57 @@
       <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="418">
+              <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContentService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ContentService.java">
+      <file leaf-file-name="ItemMapperTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/test/ItemMapperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state relative-caret-position="133">
+              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContentCatService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ContentCatService.java">
+      <file leaf-file-name="SolrItem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/pojo/SolrItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="77" column="78" lean-forward="false" selection-start-line="77" selection-start-column="78" selection-end-line="77" selection-end-column="78" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemCatService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ItemCatService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemParamService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ItemParamService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="70" column="77" lean-forward="false" selection-start-line="70" selection-start-column="77" selection-end-line="70" selection-end-column="77" />
-              <folding />
+            <state relative-caret-position="285">
+              <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+              <folding>
+                <element signature="e#331#332#0" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#395#396#0" expanded="true" />
+                <element signature="e#427#428#0" expanded="true" />
+                <element signature="e#455#456#0" expanded="true" />
+                <element signature="e#497#498#0" expanded="true" />
+                <element signature="e#531#532#0" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#601#602#0" expanded="true" />
+                <element signature="e#653#654#0" expanded="true" />
+                <element signature="e#697#698#0" expanded="true" />
+                <element signature="e#727#728#0" expanded="true" />
+                <element signature="e#755#756#0" expanded="true" />
+                <element signature="e#795#796#0" expanded="true" />
+                <element signature="e#829#830#0" expanded="true" />
+                <element signature="e#861#862#0" expanded="true" />
+                <element signature="e#889#890#0" expanded="true" />
+                <element signature="e#931#932#0" expanded="true" />
+                <element signature="e#965#966#0" expanded="true" />
+                <element signature="e#1005#1006#0" expanded="true" />
+                <element signature="e#1041#1042#0" expanded="true" />
+                <element signature="e#1099#1100#0" expanded="true" />
+                <element signature="e#1149#1150#0" expanded="true" />
+                <element signature="e#1185#1186#0" expanded="true" />
+                <element signature="e#1217#1218#0" expanded="true" />
+                <element signature="e#1267#1268#0" expanded="true" />
+                <element signature="e#1309#1310#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,8 +178,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -154,11 +208,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/pojo/ItemParam.java" />
-        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-param-list.html" />
-        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-param-add.html" />
-        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ItemParamMapper.java" />
-        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/model/TaoTaoResult.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-edit.html" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/js/common.js" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/item-list.html" />
@@ -195,9 +244,7 @@
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/manager/content-edit.html" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/controller/ContentController.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/index.html" />
-        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/pom.xml" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/config/RedisConfig.java" />
-        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ItemCatService.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ContentCatService.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ContentService.java" />
@@ -205,6 +252,13 @@
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ItemService.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/portal/service/PortalItemCatService.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/solr" />
+        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/pojo/SolrItem.java" />
+        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/SolrMapper.java" />
+        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/test/SolrMapperTest.java" />
+        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/SolrService.java" />
+        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/controller/SolrController.java" />
       </list>
     </option>
   </component>
@@ -308,6 +362,16 @@
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xdcao_taotao_springboot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="xdcao_taotao_springboot" />
@@ -822,27 +886,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.taotao_app">
-    <configuration default="false" name="ItemMapperTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="xdcao_taotao_springboot" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ItemMapperTest" />
-      <option name="METHOD_NAME" value="testUpdate" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="taotao_app" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -905,6 +948,27 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestFileUpload" />
       <option name="METHOD_NAME" value="testUpload" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="SolrMapperTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="xdcao_taotao_springboot" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SolrMapperTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1328,19 +1392,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ItemMapperTest.testUpdate" />
-      <item index="1" class="java.lang.String" itemvalue="Spring Boot.taotao_app" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ContentMapperTest.testInsert" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.SqlPageTest.testPageInfo" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestFileUpload.testUpload" />
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.taotao_app" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ContentMapperTest.testInsert" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SqlPageTest.testPageInfo" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestFileUpload.testUpload" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SolrMapperTest.test" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Spring Boot.taotao_app" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestFileUpload.testUpload" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.SqlPageTest.testPageInfo" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ContentMapperTest.testInsert" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ItemMapperTest.testUpdate" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SolrMapperTest.test" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestFileUpload.testUpload" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SqlPageTest.testPageInfo" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ContentMapperTest.testInsert" />
       </list>
     </recent_temporary>
   </component>
@@ -1362,7 +1426,7 @@
       <workItem from="1495702219768" duration="9780000" />
       <workItem from="1495790802476" duration="10136000" />
       <workItem from="1495964386309" duration="37095000" />
-      <workItem from="1496130435888" duration="25596000" />
+      <workItem from="1496130435888" duration="29561000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1495467455872</created>
@@ -1539,18 +1603,25 @@
       <option name="project" value="LOCAL" />
       <updated>1496413444607</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="费半天劲搭好solr+IKAnalyzer">
+      <created>1496437574812</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1496437574812</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ItemMapperTest_testUpdate - 2017.05.23 at 16h 47m 40s.xml">
-      <configuration name="ItemMapperTest.testUpdate" configurationId="JUnit" />
+    <history-entry file="SolrMapperTest_test - 2017.06.03 at 05h 33m 21s.xml">
+      <configuration name="SolrMapperTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ItemMapperTest_testUpdate - 2017.05.23 at 16h 54m 52s.xml">
-      <configuration name="ItemMapperTest.testUpdate" configurationId="JUnit" />
+    <history-entry file="SolrMapperTest_test - 2017.06.03 at 05h 34m 26s.xml">
+      <configuration name="SolrMapperTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SqlPageTest_testPageInfo - 2017.05.24 at 14h 00m 15s.xml">
-      <configuration name="SqlPageTest.testPageInfo" configurationId="JUnit" />
+    <history-entry file="SolrMapperTest_test - 2017.06.03 at 06h 01m 38s.xml">
+      <configuration name="SolrMapperTest.test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="SqlPageTest_testPageInfo - 2017.05.24 at 14h 38m 13s.xml">
       <configuration name="SqlPageTest.testPageInfo" configurationId="JUnit" />
@@ -1575,11 +1646,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118570000" />
+    <option name="totallyTimeSpent" value="122535000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1600,10 +1670,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2679372" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5941704" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847533" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26528117" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3031785" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1665,7 +1735,8 @@
     <MESSAGE value="商品内容的添加、修改、删除" />
     <MESSAGE value="搭建redis缓存服务" />
     <MESSAGE value="缓存同步的一点补充" />
-    <option name="LAST_COMMIT_MESSAGE" value="缓存同步的一点补充" />
+    <MESSAGE value="费半天劲搭好solr+IKAnalyzer" />
+    <option name="LAST_COMMIT_MESSAGE" value="费半天劲搭好solr+IKAnalyzer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1678,72 +1749,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/commons/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="62" lean-forward="false" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/commons/footer-links.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/model/CatNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/portal/controller/PortalController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ItemCatMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/model/CatItemResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/config/JacksonUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/portal/controller/PortalCatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/portal_js/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="414" column="20" lean-forward="false" selection-start-line="414" selection-start-column="20" selection-end-line="414" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/portal_js/lib-v1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1993,14 +1998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="44" column="43" lean-forward="false" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.5.2.RELEASE/spring-boot-autoconfigure-1.5.2.RELEASE.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -2021,14 +2018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2124,9 +2113,133 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/portal/service/PortalItemCatService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        <state relative-caret-position="361">
+          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/pojo/SolrItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#861#862#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+            <element signature="e#965#966#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1099#1100#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+            <element signature="e#1185#1186#0" expanded="true" />
+            <element signature="e#1217#1218#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#1309#1310#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/test/ItemMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/test/SolrMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/SolrMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="64" lean-forward="false" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-solr/2.1.3.RELEASE/spring-data-solr-2.1.3.RELEASE.jar!/notice.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-solr/2.1.3.RELEASE/spring-data-solr-2.1.3.RELEASE.jar!/org/springframework/data/solr/repository/config/EnableSolrRepositories.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/solr/solr-solrj/5.5.4/solr-solrj-5.5.4.jar!/org/apache/solr/client/solrj/SolrClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5309">
+          <caret line="44" column="50" lean-forward="true" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/SolrService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="32" column="44" lean-forward="true" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/controller/SolrController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
