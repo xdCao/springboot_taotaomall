@@ -52,7 +52,7 @@
                 return ;
             }
             TT.createWindow({
-                url : "/content-add"
+                url : "/manager/content-add"
             });
         }
     },{
@@ -69,7 +69,7 @@
                 return ;
             }
             TT.createWindow({
-                url : "/content-edit",
+                url : "/manager/content-edit",
                 onLoad : function(){
                     var data = $("#contentList").datagrid("getSelections")[0];
                     $("#contentEditForm").form("load",data);

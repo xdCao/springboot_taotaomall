@@ -8,10 +8,19 @@ import java.util.Date;
 public class Content {
 
     private long id;
-    private long category_id;
+    private long categoryId;
     private String title;
     private String sub_title;
     private String title_desc;
+
+    public long getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(long categoryId) {
+        this.categoryId = categoryId;
+    }
+
     private String url;
     private String pic;
     private String pic2;
@@ -25,14 +34,6 @@ public class Content {
 
     public void setId(long id) {
         this.id = id;
-    }
-
-    public long getCategory_id() {
-        return category_id;
-    }
-
-    public void setCategory_id(long category_id) {
-        this.category_id = category_id;
     }
 
     public String getTitle() {

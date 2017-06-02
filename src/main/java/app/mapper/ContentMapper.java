@@ -13,7 +13,7 @@ public interface ContentMapper {
     @Select("select * from tb_content")
     @Results({
             @Result(property = "id",column = "id"),
-            @Result(property = "category_id",column = "category_id"),
+            @Result(property = "categoryId",column = "category_id"),
             @Result(property = "title",column = "title"),
             @Result(property = "sub_title",column = "sub_title"),
             @Result(property = "title_desc",column = "title_desc"),
@@ -29,7 +29,7 @@ public interface ContentMapper {
     @Select("select * from tb_content where category_id=#{categoryId}")
     @Results({
             @Result(property = "id",column = "id"),
-            @Result(property = "category_id",column = "category_id"),
+            @Result(property = "categoryId",column = "category_id"),
             @Result(property = "title",column = "title"),
             @Result(property = "sub_title",column = "sub_title"),
             @Result(property = "title_desc",column = "title_desc"),
@@ -44,7 +44,8 @@ public interface ContentMapper {
 
     @Select("select * from tb_content where id=#{id}")
     @Results({
-            @Result(property = "category_id",column = "category_id"),
+            @Result(property = "id",column = "id"),
+            @Result(property = "categoryId",column = "category_id"),
             @Result(property = "title",column = "title"),
             @Result(property = "sub_title",column = "sub_title"),
             @Result(property = "title_desc",column = "title_desc"),
@@ -58,11 +59,11 @@ public interface ContentMapper {
     Content getOne(long id);
 
     @Insert("insert into tb_content(category_id,title,sub_title,title_desc,url,pic,pic2,content,created,updated) " +
-            "values(#{category_id},#{title},#{sub_title},#{title_desc},#{url},#{pic},#{pic2},#{content},#{created},#{updated})")
+            "values(#{categoryId},#{title},#{sub_title},#{title_desc},#{url},#{pic},#{pic2},#{content},#{created},#{updated})")
     void insert(Content content);
 
 
-    @Update("update tb_content set category_id=#{category_id},title=#{title},sub_title=#{sub_title},title_desc=#{title_desc}" +
+    @Update("update tb_content set category_id=#{categoryId},title=#{title},sub_title=#{sub_title},title_desc=#{title_desc}" +
             ",url=#{url},pic=#{pic},pic2=#{pic2},content=#{content},created=#{created},updated=#{updated} where id=#{id}")
     void update(Content content);
 

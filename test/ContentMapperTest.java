@@ -26,7 +26,7 @@ public class ContentMapperTest {
     public void testInsert() throws Exception {
 
         Content content=new Content();
-        content.setCategory_id(2);
+        content.setCategoryId(2);
         content.setContent("jajajhdaslkdjlkasjdlkaslkd");
         contentMapper.insert(content);
 
