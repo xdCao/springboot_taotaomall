@@ -1,0 +1,5 @@
+solr配置注意：
+
+一定要保证版本的适配，不要用最新版
+
+solr-4.10.3+IKAnalyzer2012FF_u1.jar
