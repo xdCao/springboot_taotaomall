@@ -8,6 +8,7 @@ import app.pojo.Item;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -23,6 +24,7 @@ public class ContentService {
     @Autowired
     private ContentMapper contentMapper;
 
+    @Cacheable(value = "contentCache",keyGenerator = "wiselyKeyGenerator")
     public DataGridResult getContentsByCatId(int page,int rows,Long categoryId){
         PageHelper.startPage(page,rows);
         List<Content> contents=contentMapper.getByCatId(categoryId);
