@@ -1,10 +1,26 @@
 import org.csource.fastdfs.*;
 import org.junit.Test;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
 /**
  * Created by xdcao on 2017/5/26.
  */
 public class TestFileUpload {
+
+    @Test
+    public void testIp(){
+        InetAddress addr = null;
+        try {
+            addr = InetAddress.getLocalHost();
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
+        String ip=addr.getHostAddress().toString();//获得本机IP
+
+        System.out.println(ip);
+    }
 
     @Test
     public void testUpload() throws Exception{

@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 
 /**
  * Created by xdcao on 2017/5/27.
@@ -13,7 +15,7 @@ import java.io.*;
 public class PictureService {
 
     private static String filepath="D:/upload";
-    private static String baseUrl="http://localhost/";
+    private static String baseUrl="http://";
 
     public PictureResult uploadPicture(MultipartFile pic) {
 
@@ -37,7 +39,16 @@ public class PictureService {
         }
 
         pictureResult.setError(0);
-        pictureResult.setUrl(baseUrl+picName);
+
+        InetAddress addr = null;
+        try {
+            addr = InetAddress.getLocalHost();
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
+        String ip=addr.getHostAddress().toString();//获得本机IP
+
+        pictureResult.setUrl(baseUrl+ip+"/"+picName);
         return pictureResult;
 
 
