@@ -158,12 +158,12 @@
         <ul class="list-h clearfix" tpl="2">
                 <li th:each="item:${itemList}" class="item-book" bookid="11078102">
                     <div class="p-img">
-                        <a target="_blank" href="/item/${item.id }.html">
+                        <a target="_blank" th:href="'/portal/item/'+${item.id}">
                             <img width="160" height="160" data-img="1" th:src="@{${item.image}}" />
                         </a>
                     </div>
                     <div class="p-name">
-                        <a th:utext="${item.title}" target="_blank" href="/item/${item.id }.html">
+                        <a th:utext="${item.title}" target="_blank" th:href="'/portal/item/'+${item.id}">
 
                         </a>
                     </div>

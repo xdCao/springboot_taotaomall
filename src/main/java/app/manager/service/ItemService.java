@@ -42,7 +42,8 @@ public class ItemService {
     @Autowired
     private SolrService solrService;
 
-    public Item getItemById(long id){
+    @Cacheable(value = "itembaseCache",keyGenerator = "wiselyKeyGenerator")
+    public Item getItemBaseById(long id){
         return itemMapper.getOne(id);
     }
 

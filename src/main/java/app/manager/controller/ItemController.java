@@ -21,7 +21,7 @@ public class ItemController {
 
     @RequestMapping(value = "/item/{itemId}")
     public Item getOneItem(@PathVariable long itemId){
-        return itemService.getItemById(itemId);
+        return itemService.getItemBaseById(itemId);
     }
 
     @RequestMapping(value = "/item/list")
