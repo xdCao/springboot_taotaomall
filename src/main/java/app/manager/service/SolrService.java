@@ -3,6 +3,7 @@ package app.manager.service;
 import app.mapper.SolrMapper;
 import app.model.SolrResult;
 import app.model.TaoTaoResult;
+import app.pojo.Item;
 import app.pojo.SolrItem;
 import org.apache.solr.client.solrj.SolrClient;
 import org.apache.solr.client.solrj.SolrQuery;
@@ -91,6 +92,32 @@ public class SolrService {
 
         return solrResult;
 
+    }
+
+    public void addSolr(SolrItem solrItem) throws IOException, SolrServerException {
+
+        SolrInputDocument document=new SolrInputDocument();
+        document.addField("id",solrItem.getId());
+        document.addField("item_title",solrItem.getTitle());
+        document.addField("item_sell_point",solrItem.getSell_point());
+        document.addField("item_price",solrItem.getPrice());
+        document.addField("item_image",solrItem.getImage());
+        document.addField("item_category_name",solrItem.getCategory_name());
+        document.addField("item_desc",solrItem.getItem_desc());
+        solrClient.add(document);
+        solrClient.commit();
+
+    }
+
+    public void updateSolrElement(long id) throws IOException, SolrServerException {
+        solrClient.deleteById(String.valueOf(id));
+        SolrItem solrItem=solrMapper.getSolrItemById(id);
+        addSolr(solrItem);
+    }
+
+    public void deleteSolrEle(long id) throws IOException, SolrServerException {
+        solrClient.deleteById(String.valueOf(id));
+        solrClient.commit();
     }
 
 

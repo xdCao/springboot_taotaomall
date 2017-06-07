@@ -1,15 +1,15 @@
 package app.manager.service;
 
+import app.mapper.ItemCatMapper;
 import app.mapper.ItemDescMapper;
 import app.mapper.ItemMapper;
 import app.mapper.ItemParamItemMapper;
 import app.model.DataGridResult;
 import app.model.TaoTaoResult;
-import app.pojo.Item;
-import app.pojo.ItemDesc;
-import app.pojo.ItemParamItem;
+import app.pojo.*;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import org.apache.solr.client.solrj.SolrServerException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
@@ -17,6 +17,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
@@ -35,6 +36,12 @@ public class ItemService {
     @Autowired
     private ItemParamItemMapper itemParamItemMapper;
 
+    @Autowired
+    private ItemCatMapper itemCatMapper;
+
+    @Autowired
+    private SolrService solrService;
+
     public Item getItemById(long id){
         return itemMapper.getOne(id);
     }
@@ -46,7 +53,7 @@ public class ItemService {
 
     @Transactional(propagation = Propagation.REQUIRED)
     @CacheEvict(value = "itemCache",keyGenerator = "wiselyKeyGenerator")
-    public TaoTaoResult insertItem(Item item, String desc,String itemParams){
+    public TaoTaoResult insertItem(Item item, String desc,String itemParams) throws IOException, SolrServerException {
         long id=System.currentTimeMillis();
         item.setId(id);
         item.setStatus(1);
@@ -67,19 +74,37 @@ public class ItemService {
         itemParamItem.setUpdated(date);
         itemParamItemMapper.insert(itemParamItem);
 
+
+
+        SolrItem solrItem=new SolrItem();
+        solrItem.setId(String.valueOf(item.getId()));
+        solrItem.setTitle(item.getTitle());
+        solrItem.setSell_point(item.getSell_point());
+        solrItem.setPrice((long) item.getPrice());
+        solrItem.setItem_desc(desc);
+        solrItem.setImage(item.getImage());
+        ItemCat itemCat=itemCatMapper.getById(item.getCid());
+        solrItem.setCategory_name(itemCat.getName());
+
+        solrService.addSolr(solrItem);
+
         return new TaoTaoResult(200,"ok",null);
     }
 
     @Transactional
     @CacheEvict(value = "itemCache",keyGenerator = "wiselyKeyGenerator")
-    public void updateItem(Item item){
+    public void updateItem(Item item) throws IOException, SolrServerException {
         itemMapper.update(item);
+
+        solrService.updateSolrElement(item.getId());
     }
 
     @Transactional
     @CacheEvict(value = "itemCache",keyGenerator = "wiselyKeyGenerator")
-    public void deleteItemById(long id){
+    public void deleteItemById(long id) throws IOException, SolrServerException {
         itemMapper.delete(id);
+
+        solrService.deleteSolrEle(id);
     }
 
     @Cacheable(value = "itemCache",keyGenerator = "wiselyKeyGenerator")

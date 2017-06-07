@@ -25,5 +25,17 @@ public interface ItemCatMapper {
     })
     List<ItemCat> getByParentId(long parent_id);
 
+    @Select("select * from tb_item_cat where id=#{id}")
+    @Results({
+            @Result(property = "id",column = "id"),
+            @Result(property = "parent_id",column = "parent_id"),
+            @Result(property = "name",column = "name"),
+            @Result(property = "status",column = "status"),
+            @Result(property = "sort_order",column = "sort_order"),
+            @Result(property = "is_parent",column = "is_parent"),
+            @Result(property = "created",column = "created"),
+            @Result(property = "updated",column = "updated")
+    })
+    ItemCat getById(long id);
 
 }
