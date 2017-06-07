@@ -48,7 +48,7 @@ public class SolrService {
         return new TaoTaoResult(200,"ok",null);
     }
 
-    public TaoTaoResult querySolr(String queryStr,int page,int rows) throws IOException, SolrServerException {
+    public SolrResult querySolr(String queryStr,int page,int rows) throws IOException, SolrServerException {
 
         SolrQuery solrQuery=new SolrQuery(queryStr);
         solrQuery.setStart((page-1)*rows);
@@ -89,7 +89,7 @@ public class SolrService {
         solrResult.setPageCount(pageCount);
         solrResult.setCurPage(page);
 
-        return new TaoTaoResult(200,"ok",solrResult);
+        return solrResult;
 
     }
 

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Cache-Control" content="max-age=300" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title th:text="${query}+' - 商品搜索 - 淘淘'"></title>
+    <meta name="Keywords" content="java,淘淘java" />
+    <meta name="description" content="在淘淘中找到了29910件java的类似商品，其中包含了“图书”，“电子书”，“教育音像”，“骑行运动”等类型的java的商品。" />
+    <link rel="stylesheet" type="text/css" th:href="@{/portal_css/base.css}" media="all" />
+    <link rel="stylesheet" type="text/css" th:href="@{/portal_css/psearch20131008.css}" media="all" />
+    <link rel="stylesheet" type="text/css" th:href="@{/portal_css/psearch.onebox.css}" media="all" />
+    <link rel="stylesheet" type="text/css" th:href="@{/portal_css/pop_compare.css}" media="all" />
+    <script type="text/javascript" th:src="@{/portal_js/jquery-1.6.4.js}"></script>
+</head>
+<body>
+<script type="text/javascript" th:src="@{/portal_js/base-2011.js}" charset="utf-8"></script>
+<!-- header start -->
+<!-- header start -->
+<!--<iframe name="toppage" width="100%" height="100%" marginwidth="0" marginheight="0" frameborder="no" border="0"  th:src="@{commons/header.html}" ></iframe>-->
+
+<!--shortcut start-->
+<!--<iframe name="toppage" width="100%" height="100%" marginwidth="0" marginheight="0" frameborder="no" border="0"  src="shortcut.html" ></iframe>-->
+<script type="text/javascript" th:src="@{/portal_js/base-v1.js}" charset="utf-8"></script>
+
+<div id="shortcut-2013">
+    <div class="w">
+        <ul class="fl lh">
+            <li class="fore1 ld" clstag="homepage|keycount|home2013|01a"><b></b><a href="javascript:addToFavorite()" rel="nofollow">收藏淘淘</a></li>
+        </ul>
+        <ul class="fr lh">
+            <li class="fore1" id="loginbar" clstag="homepage|keycount|home2013|01b">您好！欢迎来到淘淘！<a href="javascript:login()">[登录]</a>&nbsp;<a href="javascript:regist()">[免费注册]</a></li>
+            <li class="fore2 ld" clstag="homepage|keycount|home2013|01c">
+                <s></s>
+                <a href="http://jd2008.jd.com/JdHome/OrderList.aspx" rel="nofollow">我的订单</a>
+            </li>
+            <li class="fore2-1 ld" id="jd-vip">
+                <s></s>
+                <a target="_blank" rel="nofollow" href="http://vip.jd.com">会员俱乐部</a>
+            </li>
+            <li class="fore3 ld menu" id="app-jd" data-widget="dropdown" clstag="homepage|keycount|home2013|01d">
+                <s></s><i></i><span class="outline"></span><span class="blank"></span>
+                <a href="http://app.jd.com/" target="_blank">手机淘淘</a><b></b>
+            </li>
+            <li class="fore4 ld menu" id="biz-service" data-widget="dropdown" clstag="homepage|keycount|home2013|01e">
+                <s></s>
+                <span class="outline"></span>
+                <span class="blank"></span>
+                客户服务
+                <b></b>
+                <div class="dd">
+                    <div><a href="http://help.jd.com/index.html" target="_blank">帮助中心</a></div>
+                    <div><a href="http://myjd.jd.com/repair/orderlist.action" target="_blank" rel="nofollow">售后服务</a></div>
+                    <div><a href="http://chat.jd.com/jdchat/custom.action" target="_blank" rel="nofollow">在线客服</a></div>
+                    <div><a href="http://myjd.jd.com/opinion/list.action" target="_blank" rel="nofollow">投诉中心</a></div>
+                    <div><a href="http://www.jd.com/contact/service.html" target="_blank">客服邮箱</a></div>
+                </div>
+            </li>
+            <li class="fore5 ld menu" id="site-nav" data-widget="dropdown" clstag="homepage|keycount|home2013|01f">
+                <s></s>
+                <span class="outline"></span>
+                <span class="blank"></span>
+                网站导航
+                <b></b>
+                <div class="dd lh">
+                    <dl class="item fore1">
+                        <dt>特色栏目</dt>
+                        <dd>
+                            <div><a target="_blank" href="http://mobile.jd.com/index.do">淘淘通信</a></div>
+                            <div><a target="_blank" href="http://jdstar.jd.com/">校园之星</a></div>
+                            <div><a target="_blank" href="http://my.jd.com/personal/guess.html">为我推荐</a></div>
+                            <div><a target="_blank" href="http://shipingou.jd.com/">视频购物</a></div>
+                            <div><a target="_blank" href="http://club.jd.com/">淘淘社区</a></div>
+                            <div><a target="_blank" href="http://read.jd.com/">在线读书</a></div>
+                            <div><a target="_blank" href="http://diy.jd.com/">装机大师</a></div>
+                            <div><a target="_blank" href="http://giftcard.jd.com/market/index.action">淘淘E卡</a></div>
+                            <div><a target="_blank" href="http://channel.jd.com/jiazhuang.html">家装城</a></div>
+                            <div><a target="_blank" href="http://dapeigou.jd.com/">搭配购</a></div>
+                            <div><a target="_blank" href="http://xihuan.jd.com/">我喜欢</a></div>
+                        </dd>
+                    </dl>
+                    <dl class="item fore2">
+                        <dt>企业服务</dt>
+                        <dd>
+                            <div><a target="_blank" href="http://giftcard.jd.com/company/index">企业客户</a></div>
+                            <div><a target="_blank" href="http://sale.jd.com/p10997.html">办公直通车</a></div>
+                        </dd>
+                    </dl>
+                    <dl class="item fore3">
+                        <dt>旗下网站</dt>
+                        <dd>
+                            <div><a target="_blank" href="http://en.jd.com/">English Site</a></div>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+        </ul>
+        <span class="clr"></span>
+    </div>
+</div>
+<!--shortcut end-->
+<div id="o-header-2013">
+    <div class="w" id="header-2013">
+        <div id="logo-2013" class="ld"><a href="/" hidefocus="true" clstag="homepage|keycount|home2013|02a"><b></b><img src="/images/taotao-logo.gif" width="270" height="60" alt="淘淘"/></a></div>
+        <!--logo end-->
+        <div id="search-2013">
+            <div class="i-search ld">
+                <ul id="shelper" class="hide">
+                </ul>
+                <div class="form">
+                    <input type="text" class="text" accesskey="s" id="key" autocomplete="off" onkeydown="javascript:if(event.keyCode==13) search('key');"/>
+                    <input type="button" value="搜索" class="button" onclick="search('key');return false;" clstag="homepage|keycount|home2013|03a"/>
+                </div>
+            </div>
+            <div id="hotwords" clstag="homepage|keycount|home2013|03b"></div>
+        </div>
+        <!--search end-->
+        <div id="my360buy-2013">
+            <dl>
+                <dt class="ld"><s></s><a href="http://localhost:8084/user/showLogin" clstag="homepage|keycount|home2012|04a">我的淘淘</a><b></b></dt>
+                <dd>
+                    <div class="loading-style1"><b></b>加载中，请稍候...</div>
+                </dd>
+            </dl>
+        </div>
+        <!--my360buy end-->
+        <div id="settleup-2013" clstag="homepage|keycount|home2013|05a">
+            <dl>
+                <dt class="ld"><s></s><span class="shopping"><span id="shopping-amount"></span></span><a href="/cart/cart.html" id="settleup-url">去购物车结算</a> <b></b> </dt>
+                <!-- 				<dd>
+                                    <div class="prompt">
+                                        <div class="loading-style1"><b></b>加载中，请稍候...</div>
+                                    </div>
+                                </dd>
+                 -->			</dl>
+        </div>
+        <!--settleup end-->
+    </div>
+    <!--header end-->
+<!-- header end -->
+<div class="w main">
+    <div class="crumb">全部结果&nbsp;&gt;&nbsp;<strong th:text="${query}"></strong></div>
+    <div class="clr"></div>
+    <div class="m clearfix" id="bottom_pager">
+        <div  id="pagin-btm" class="pagin fr" clstag="search|keycount|search|pre-page2">
+            <span class="prev-disabled">上一页<b></b></span>
+            <a href="javascript:void(0)" class="current">1</a>
+            <a href="#" th:href="@{/search(keyword=java,page=2)}">2</a>
+            <a href="#" th:href="@{/search(keyword=java,page=3)}">3</a>
+            <a href="#" th:href="@{/search(keyword=java,page=4)}">4</a>
+            <a href="#" th:href="@{/search(keyword=java,page=5)}">5</a>
+            <a href="#" th:href="@{/search(keyword=java,page=6)}">6</a>
+            <span class="text">…</span>
+            <a href="#" th:href="@{/search(keyword=java,page=2)}" class="next">下一页<b></b></a>
+            <span class="page-skip"><em th:text="'&nbsp;&nbsp;共'+${totalPages}+'页&nbsp;&nbsp;&nbsp;&nbsp;到第'"></em></span>
+        </div>
+    </div>
+    <div class="m psearch " id="plist">
+        <ul class="list-h clearfix" tpl="2">
+                <li th:each="item:${itemList}" class="item-book" bookid="11078102">
+                    <div class="p-img">
+                        <a target="_blank" href="/item/${item.id }.html">
+                            <img width="160" height="160" data-img="1" data-lazyload="${item.image}" />
+                        </a>
+                    </div>
+                    <div class="p-name">
+                        <a th:utext="${item.title}" target="_blank" href="/item/${item.id }.html">
+
+                        </a>
+                    </div>
+                    <div class="p-price">
+                        <i>淘淘价：</i>
+                        <strong th:text="'￥ '+${item.price/100}"></strong>
+                    </div>
+                    <div class="service">由 淘淘 发货</div>
+                    <div class="extra">
+                        <span class="star"><span class="star-white"><span class="star-yellow h5">&nbsp;</span></span></span>
+                    </div>
+                </li>
+        </ul>
+    </div>
+</div>
+    <!-- footer start -->
+    <!--<iframe name="toppage" width="100%" height="100%" marginwidth="0" marginheight="0" frameborder="no" border="0"  src="commons/footer.html" ></iframe>-->
+
+
+    <div class="w" clstag="homepage|keycount|home2013|37a">
+        <div id="service-2013">
+            <dl class="fore1">
+                <dt><b></b><strong>购物指南</strong></dt>
+                <dd>
+                    <div><a href="http://help.jd.com/help/question-56.html" target="_blank" rel="nofollow">购物流程</a></div>
+                    <div><a href="http://help.jd.com/help/question-57.html" target="_blank" rel="nofollow">会员介绍</a></div>
+                    <div><a href="http://help.jd.com/help/question-181.html" target="_blank" rel="nofollow">团购/机票</a></div>
+                    <div><a href="http://help.jd.com/help/question-61.html" target="_blank" rel="nofollow">常见问题</a></div>
+                    <div><a href="http://help.jd.com/help/question-63.html" target="_blank" rel="nofollow">大家电</a></div>
+                    <div><a href="http://help.jd.com/index.html" target="_blank" rel="nofollow">联系客服</a></div>
+                </dd>
+            </dl>
+            <dl class="fore2">
+                <dt><b></b><strong>配送方式</strong></dt>
+                <dd>
+                    <div><a href="http://help.jd.com/help/question-64.html" target="_blank" rel="nofollow">上门自提</a></div>
+                    <div><a href="http://help.jd.com/help/question-360.html" target="_blank" rel="nofollow">211限时达</a></div>
+                    <div><a href="http://help.jd.com/help/distribution-768.html" target="_blank" rel="nofollow">配送服务查询</a></div>
+                    <div><a href="http://help.jd.com/help/question-892.html#help2215" target="_blank" rel="nofollow">配送费收取标准</a></div>
+                    <div><a href="http://market.jd.com/giftcard/index.html#one5" target="_blank" rel="nofollow">如何送礼</a></div>
+                    <div><a href="http://en.jd.com/chinese.html" target="_blank">海外配送</a></div>
+                </dd>
+            </dl>
+            <dl class="fore3">
+                <dt><b></b><strong>支付方式</strong></dt>
+                <dd>
+                    <div><a href="http://help.jd.com/help/question-67.html" target="_blank" rel="nofollow">货到付款</a></div>
+                    <div><a href="http://help.jd.com/help/question-68.html" target="_blank" rel="nofollow">在线支付</a></div>
+                    <div><a href="http://help.jd.com/help/question-71.html" target="_blank" rel="nofollow">分期付款</a></div>
+                    <div><a href="http://help.jd.com/help/question-69.html" target="_blank" rel="nofollow">邮局汇款</a></div>
+                    <div><a href="http://help.jd.com/help/question-70.html" target="_blank" rel="nofollow">公司转账</a></div>
+                </dd>
+            </dl>
+            <dl class="fore4">
+                <dt><b></b><strong>售后服务</strong></dt>
+                <dd>
+                    <div><a href="http://myjd.jd.com/afs/help/afshelp.action" target="_blank" rel="nofollow">售后政策</a></div>
+                    <div><a href="http://help.jd.com/help/question-99.html" target="_blank" rel="nofollow">价格保护</a></div>
+                    <div><a href="http://help.jd.com/help/question-100.html" target="_blank" rel="nofollow">退款说明</a></div>
+                    <div><a href="http://myjd.jd.com/repair/repairs.action" target="_blank" rel="nofollow">返修/退换货</a></div>
+                    <div><a href="http://help.jd.com/help/question-881.html" target="_blank" rel="nofollow">取消订单</a></div>
+                </dd>
+            </dl>
+            <dl class="fore5">
+                <dt><b></b><strong>特色服务</strong></dt>
+                <dd>
+                    <div><a href="http://help.jd.com/help/question-79.html" target="_blank">夺宝岛</a></div>
+                    <div><a href="http://help.jd.com/help/question-86.html" target="_blank">DIY装机</a></div>
+                    <div><a href="http://fuwu.jd.com/" target="_blank" rel="nofollow">延保服务</a></div>
+                    <div><a href="http://giftcard.jd.com/market/index.action" target="_blank" rel="nofollow">淘淘E卡</a></div>
+                    <div><a href="http://help.jd.com/help/question-91.html" target="_blank" rel="nofollow">节能补贴</a></div>
+                    <div><a href="http://mobile.jd.com/" target="_blank" rel="nofollow">淘淘通信</a></div>
+                </dd>
+            </dl>
+            <div class="fr">
+                <div class="sm" id="branch-office">
+                    <div class="smt">
+                        <h3>淘淘自营覆盖区县</h3>
+                    </div>
+                    <div class="smc">
+                        <p>淘淘已向全国1859个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+                        <p class="ar"><a href="http://help.jd.com/help/distribution-768.html" target="_blank">查看详情&nbsp;></a></p>
+                    </div>
+                </div>
+            </div>
+            <span class="clr"></span>
+        </div>
+    </div>
+    <div class="w" clstag="homepage|keycount|home2013|38a">
+        <!--<iframe name="toppage" width=100% height=100% marginwidth=0 marginheight=0 frameborder="no" border="0"  src="commons/footer-links.html" ></iframe>-->
+        <div id="footer-2013">
+            <div class="links"><a href="http://www.jd.com/intro/about.aspx" target="_blank" rel="nofollow">关于我们</a>|<a href="http://www.jd.com/contact/" target="_blank" rel="nofollow">联系我们</a>|<a href="http://zhaopin.jd.com/" target="_blank" rel="nofollow">人才招聘</a>|<a href="http://www.jd.com/contact/joinin.aspx" target="_blank" rel="nofollow">商家入驻</a>|<a href="http://jzt.jd.com" target="_blank" rel="nofollow">营销中心</a>|<a href="http://app.jd.com/" target="_blank" rel="nofollow">手机淘淘</a>|<a href="http://club.jd.com/links.aspx" target="_blank">友情链接</a>|<a href="http://media.jd.com/" target="_blank">销售联盟</a>|<a target="_blank" href="http://club.jd.com/">淘淘社区</a>|<a target="_blank" href="http://gongyi.jd.com">淘淘公益</a>|<a target="_blank" href="http://en.jd.com/">English Site</a></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" th:src="@{/portal_js/jquery-1.6.4.js}"></script>
+    <script type="text/javascript" th:src="@{/portal_js/jquery-extend.js}"></script>
+    <script type="text/javascript" th:src="@{/portal_js/lib-v1.js}" charset="utf-8"></script>
+    <script type="text/javascript" th:src="@{/portal_js/taotao.js}" charset="utf-8"></script>
+    <script th:inline="JavaScript"> (function(){
+        var A="<strong>热门搜索：</strong><a href='http://sale.jd.com/act/OfHQzJ2GLoYlmTIu.html' target='_blank' style='color:#ff0000' clstag='homepage|keycount|home2013|03b1'>校园之星</a><a href='http://sale.jd.com/act/aEBHqLFMfVzDZUvu.html' target='_blank'>办公打印</a><a href='http://www.jd.com/pinpai/878-12516.html' target='_blank'>美菱冰箱</a><a href='http://sale.jd.com/act/nuzKb6ZiYL.html' target='_blank'>无肉不欢</a><a href='http://sale.jd.com/act/ESvhtcAJNbaj.html' target='_blank'>万件好货</a><a href='http://sale.jd.com/act/nAqiWgU34frQolt.html' target='_blank'>iPhone6</a><a href='http://sale.jd.com/act/p0CmUlEFPHLX.html' target='_blank'>哈利波特</a><a href='http://sale.jd.com/act/FstSdb2vCOLa8BRi.html' target='_blank'>美模接驾</a>";
+        var B=["java","apple","LG G3","天梭","保温杯","三个爸爸"];
+        B=pageConfig.FN_GetRandomData(B);
+        $("#hotwords").html(A);
+        var _searchValue = "${query}";
+        if(_searchValue.length == 0){
+            _searchValue = B;
+        }
+        $("#key").val(_searchValue).bind("focus",function(){if (this.value==B){this.value="";this.style.color="#333"}}).bind("blur",function(){if (!this.value){this.value=B;this.style.color="#999"}});
+    })();
+    </script>
+    <!-- footer end -->
+<script type="text/javascript" th:src="@{/js/jquery.hashchange.js}"></script>
+<script type="text/javascript" th:src="@{/js/search_main.js}"></script>
+<script th:inline="JavaScript">
+    //${paginator.totalPages}
+    SEARCH.query = "${query}";
+    SEARCH.bottom_page_html([[${page}]],[[${totalPages}]],'');
+</script>
+</div>
+</body>
+</html>
