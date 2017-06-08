@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.nio.file.attribute.UserPrincipalLookupService;
 
 /**
@@ -54,8 +56,14 @@ public class UserController {
 
     @RequestMapping(value = "/login")
     @ResponseBody
-    public TaoTaoResult login(@RequestParam String username,@RequestParam String password){
-        return userService.login(username,password);
+    public TaoTaoResult login(@RequestParam String username, @RequestParam String password, HttpServletRequest request, HttpServletResponse response){
+        return userService.login(username,password,request,response);
+    }
+
+    @RequestMapping(value = "/token/{uuid}")
+    @ResponseBody
+    public TaoTaoResult getSession(@PathVariable String uuid){
+        return userService.getSession(uuid);
     }
 
 
