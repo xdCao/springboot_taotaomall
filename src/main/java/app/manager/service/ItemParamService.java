@@ -76,6 +76,8 @@ public class ItemParamService {
         return new TaoTaoResult(200,"ok",null);
     }
 
-
-
+    @Cacheable(value = "portalItemParamCache",keyGenerator = "wiselyKeyGenerator")
+    public ItemParam getItemParamById(Long itemId) {
+        return itemParamMapper.getOne(itemId);
+    }
 }

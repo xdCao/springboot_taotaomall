@@ -49,6 +49,8 @@ public class RedisConfig extends CachingConfigurerSupport{
         rcm.setDefaultExpiration(60);
         Map<String, Long> map = new HashMap<String, Long>();
         map.put("itembaseCache", 2400L);
+        map.put("portalItemParamCache",2400L);
+        map.put("itemDescCache",2400L);
         rcm.setExpires(map);
         return rcm;
     }

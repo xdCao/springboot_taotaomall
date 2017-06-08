@@ -269,7 +269,7 @@
 
         <div id="preview">
             <div id="spec-n1" class="jqzoom" clstag="shangpin|keycount|product|spec-n1">
-                <img data-img="1" width="350" height="350" th:src="${item.image}" th:alt="${item.title}"  jqimg="${item.images[0]}"/>
+                <img data-img="1" width="350" height="350" th:src="${item.image}" th:alt="${item.title}"  th:jqimg="${item.image}"/>
             </div>
 
             <div id="spec-list" clstag="shangpin|keycount|product|spec-n5">
@@ -343,12 +343,12 @@
                 <div class="detail-correction">
                     <b></b>如果您发现商品信息不准确，欢迎纠错
                 </div>
-                <div id="item-desc" class="detail-content">
-                    ${itemDesc.itemDesc }
+                <div id="item-desc" class="detail-content" th:text="${itemDesc.item_desc}">
+
                 </div>
             </div>
-            <div class="mc hide" data-widget="tab-content" id="product-detail-2">
-                ${itemParam}
+            <div class="mc hide" data-widget="tab-content" id="product-detail-2" th:utext="${itemParamItem.param_data}">
+
             </div>
             <div class="mc  hide" data-widget="tab-content" id="product-detail-3"><div class="item-detail">液晶电视×1、底座×1、遥控器×1、使用说明书×1、电源线×1</div></div><div class="mc  hide" data-widget="tab-content" id="product-detail-4"></div><div class="mc hide " data-widget="tab-content" id="product-detail-5"><div class="item-detail">本产品全国联保，享受三包服务，质保期为：一年质保<br />本产品提供上门安装调试、提供上门检测和维修等售后服务，自收到商品之日起，如您所购买家电商品出现质量问题，请先联系厂家进行检测 ，凭厂商提供的故障检测证明，在“我的淘淘-客户服务-返修退换货”页面提交退换申请，将有专业售后人员提供服务。淘淘承诺您：30天内可为您退货或换货，180天内无需修理直接换货，超过180天按国家三包规定享受服务。<br />您可以查询本品牌在各地售后服务中心的联系方式，<a  class="link_1" href="http://www.changhong.com">请点击这儿查询......</a><br />
             <br/>售后服务电话：400-811-1666<br/>品牌官方网站：<a href="http://www.changhong.com" target="_blank">http://www.changhong.com</a>
@@ -477,15 +477,15 @@
 <script type="text/javascript" th:src="@{/portal_js/lib-v1.js}"></script>
 <script type="text/javascript" th:src="@{/portal_js/product.js}"></script>
 <script type="text/javascript" th:src="@{/portal_js/iplocation_server.js}"></script>
-<script type="text/javascript">
+<script th:inline="JavaScript">
     var itemControl = {
         param:{
-            descUrl:"/item/desc/",
-            paramUrl:"/item/param/"
+            descUrl:"/portal/item/desc/",
+            paramUrl:"/portal/item/param/"
         },
         //请求商品描述
         getItemDesc:function(itemId) {
-            $.get(itemControl.param.descUrl+itemId+".html", function(data){
+            $.get(itemControl.param.descUrl+itemId, function(data){
                 //返回商品描述的html，直接显示到页面
                 $("#item-desc").append(data);
             });
@@ -496,7 +496,7 @@
         getItemParam:function(itemId) {
             //如果没有查询过规格参数，就做请求
             if (!itemControl.haveParam) {
-                $.get(itemControl.param.paramUrl+itemId+".html", function(data){
+                $.get(itemControl.param.paramUrl+itemId, function(data){
                     //返回商品规格的html，直接显示到页面
                     $("#product-detail-2").append(data);
                     //更改flag状态

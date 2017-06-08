@@ -40,7 +40,7 @@ public interface ItemParamItemMapper {
             @Result(property = "created",column = "created"),
             @Result(property = "updated",column = "updated")
     })
-    List<ItemParamItem> getItemParamsByItemId(long itemId);
+    ItemParamItem getItemParamsByItemId(long itemId);
 
 
     @Insert("insert into tb_item_param_item (item_id,param_data,created,updated) values (#{item_id},#{param_data},#{created},#{updated})")

@@ -47,6 +47,11 @@ public class ItemService {
         return itemMapper.getOne(id);
     }
 
+    @Cacheable(value = "itemDescCache",keyGenerator = "wiselyKeyGenerator")
+    public ItemDesc getItemDescById(long id){
+        return itemDescMapper.getOne(id);
+    }
+
 
     public List<Item> getAllItems(){
         return itemMapper.getAll();
