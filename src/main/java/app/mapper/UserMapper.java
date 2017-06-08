@@ -34,6 +34,28 @@ public interface UserMapper {
     })
     User getOne(Long id);
 
+    @Select("SELECT * FROM tb_user WHERE username = #{username}")
+    @Results({
+            @Result(property = "username", column = "username"),
+            @Result(property = "password",  column = "password"),
+            @Result(property = "phone",  column = "phone"),
+            @Result(property = "email",  column = "email"),
+            @Result(property = "created",  column = "created"),
+            @Result(property = "updated",  column = "updated")
+    })
+    List<User> getUsersByName(String username);
+
+    @Select("SELECT * FROM tb_user WHERE phone = #{phone}")
+    @Results({
+            @Result(property = "username", column = "username"),
+            @Result(property = "password",  column = "password"),
+            @Result(property = "phone",  column = "phone"),
+            @Result(property = "email",  column = "email"),
+            @Result(property = "created",  column = "created"),
+            @Result(property = "updated",  column = "updated")
+    })
+    List<User> getUsersByPhone(String phone);
+
     @Insert("INSERT INTO tb_user(username,password,phone,email,created,updated) VALUES(#{username}, #{password}, #{phone}, #{email}, #{created}, #{updated})")
     void insert(User user);
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff451ee9-d559-4ab5-8a7c-f3eb442ce88d" name="Default" comment="solr商品的同步">
+    <list default="true" id="ff451ee9-d559-4ab5-8a7c-f3eb442ce88d" name="Default" comment="商品描述，规格参数展示">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/js/jquery-easyui-1.4.1/demo/tabs/images/modem.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/js/jquery-easyui-1.4.1/demo/tabs/images/pda.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/js/jquery-easyui-1.4.1/demo/tabs/images/scanner.png" />
@@ -131,7 +131,8 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/js/jquery-easyui-1.4.1/themes/metro/images/tabs_icons.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/js/jquery-easyui-1.4.1/themes/metro/images/tree_icons.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/js/jquery-easyui-1.4.1/themes/metro/images/validatebox_warning.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ItemParamItemService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/portal/controller/UserController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/portal/service/UserService.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/js/jquery-easyui-1.4.1/changelog.txt" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/js/jquery-easyui-1.4.1/demo/accordion/_content.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/js/jquery-easyui-1.4.1/demo/accordion/actions.html" />
@@ -597,13 +598,12 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/js/jquery-easyui-1.4.1/themes/metro/validatebox.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/js/jquery-easyui-1.4.1/themes/metro/window.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/portal_js/jquery.price_format.2.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/register.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/config/RedisConfig.java" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/config/RedisConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ItemParamService.java" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ItemParamService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ItemService.java" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ItemService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ItemParamItemMapper.java" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ItemParamItemMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/portal/controller/PortalItemController.java" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/portal/controller/PortalItemController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/item.html" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/item.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ItemParamItemService.java" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ItemParamItemService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/UserMapper.java" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/UserMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/index.html" afterPath="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/../xdcao_taotao_springboot/out/" />
     <ignored path="$PROJECT_DIR$/../xdcao_taotao_springboot/target/" />
@@ -620,24 +620,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PortalItemController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/portal/controller/PortalItemController.java">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/portal/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="42" column="53" lean-forward="true" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+            <state relative-caret-position="464">
+              <caret line="57" column="30" lean-forward="true" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1617#1632#0" expanded="true" />
+                <element signature="e#867#868#0" expanded="true" />
+                <element signature="e#922#923#0" expanded="true" />
+                <element signature="e#1008#1009#0" expanded="true" />
+                <element signature="e#1066#1067#0" expanded="true" />
+                <element signature="e#1206#1207#0" expanded="true" />
+                <element signature="e#1264#1265#0" expanded="true" />
+                <element signature="e#1395#1396#0" expanded="true" />
+                <element signature="e#1447#1448#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItemParamItemService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ItemParamItemService.java">
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/portal/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="59" column="29" lean-forward="false" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+            <state relative-caret-position="312">
+              <caret line="61" column="31" lean-forward="true" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -645,92 +652,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItemParamItemMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ItemParamItemMapper.java">
+      <file leaf-file-name="TaoTaoResult.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/model/TaoTaoResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="41" column="6" lean-forward="true" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+            <state relative-caret-position="195">
+              <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItemDesc.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/pojo/ItemDesc.java">
+      <file leaf-file-name="UserMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/UserMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="274">
+              <caret line="59" column="9" lean-forward="false" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItemParamItem.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/pojo/ItemParamItem.java">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemParamService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ItemParamService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+            <state relative-caret-position="157">
+              <caret line="64" column="40" lean-forward="true" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
               <folding>
-                <element signature="e#2646#2647#0" expanded="true" />
-                <element signature="e#2699#2700#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RedisConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/config/RedisConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ItemService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="42" column="36" lean-forward="true" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
-              <folding>
-                <element signature="e#1462#1463#0" expanded="true" />
-                <element signature="e#1510#1511#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/item.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="345" column="88" lean-forward="true" selection-start-line="345" selection-start-column="88" selection-end-line="345" selection-end-column="88" />
-              <folding>
-                <element signature="n#style#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1496898015998" expanded="true" signature="29829:29842" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/search.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="165" column="35" lean-forward="false" selection-start-line="165" selection-start-column="30" selection-end-line="165" selection-end-column="35" />
-              <folding>
-                <marker date="1496827329582" expanded="true" signature="16516:16529" ph="..." />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -761,6 +709,10 @@
       <find>itemId</find>
       <find>product-de</find>
       <find>utext</find>
+      <find>regName</find>
+      <find>personRegForm</find>
+      <find>redirect</find>
+      <find>redirectUrl</find>
     </findStrings>
     <replaceStrings>
       <replace>param_data</replace>
@@ -777,11 +729,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/portal/controller/PortalController.java" />
-        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/commons/header.html" />
-        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/commons/footer.html" />
-        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/model/CatNode.java" />
-        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/model/CatItemResult.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/portal/service/ItemCatService.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/portal_js/lib-v1.js" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/config/JacksonUtil.java" />
@@ -809,10 +756,8 @@
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/pom.xml" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/test/TestFileUpload.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/PictureService.java" />
-        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/index.html" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/model/SolrResult.java" />
-        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/portal_js/base-v1.js" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/controller/SolrController.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ItemCatMapper.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/SolrMapper.java" />
@@ -826,8 +771,15 @@
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/config/RedisConfig.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/item.html" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ItemParamItemMapper.java" />
-        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ItemParamItemService.java" />
         <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/portal/controller/PortalItemController.java" />
+        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ItemParamItemService.java" />
+        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/index.html" />
+        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/portal_js/base-v1.js" />
+        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/register.html" />
+        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/portal/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/portal/service/UserService.java" />
+        <option value="$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/login.html" />
       </list>
     </option>
   </component>
@@ -1055,6 +1007,62 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xdcao_taotao_springboot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xdcao_taotao_springboot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xdcao_taotao_springboot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xdcao_taotao_springboot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portal_css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1355,6 +1363,9 @@
     <property name="SearchEverywhereHistoryKey" value="CacheManager&#9;PSI&#9;JAVA://org.springframework.cache.CacheManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="app.portal.service" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="H:\xdcao_taotao_springboot\src\main\resources\static" />
       <recent name="H:\xdcao_taotao_springboot\src\main\resources" />
@@ -1924,7 +1935,7 @@
       <workItem from="1495964386309" duration="37095000" />
       <workItem from="1496130435888" duration="30321000" />
       <workItem from="1496544163881" duration="3782000" />
-      <workItem from="1496633012939" duration="33598000" />
+      <workItem from="1496633012939" duration="38986000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1495467455872</created>
@@ -2143,7 +2154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1496849062652</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="商品描述，规格参数展示">
+      <created>1496900470921</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1496900470921</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -2179,7 +2197,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160675000" />
+    <option name="totallyTimeSpent" value="166063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -2245,7 +2263,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="分页，json" />
     <MESSAGE value="商品分类" />
     <MESSAGE value="搭建nginx" />
     <MESSAGE value="上传图片完成" />
@@ -2270,7 +2287,8 @@
     <MESSAGE value="商品搜索展示" />
     <MESSAGE value="solr商品的同步" />
     <MESSAGE value="商品基本信息页面移植" />
-    <option name="LAST_COMMIT_MESSAGE" value="商品基本信息页面移植" />
+    <MESSAGE value="商品描述，规格参数展示" />
+    <option name="LAST_COMMIT_MESSAGE" value="商品描述，规格参数展示" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2283,78 +2301,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/controller/PageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/controller/ItemParamController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="45" column="36" lean-forward="false" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/controller/ContentCatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="30" column="38" lean-forward="true" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
-          <folding>
-            <element signature="e#1383#1384#0" expanded="false" />
-            <element signature="e#1437#1438#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/model/SolrResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/solr/solr-solrj/5.5.4/solr-solrj-5.5.4.jar!/org/apache/solr/client/solrj/response/QueryResponse.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="548" column="50" lean-forward="false" selection-start-line="548" selection-start-column="50" selection-end-line="548" selection-end-column="50" />
-          <folding>
-            <element signature="e#21551#21552#0" expanded="true" />
-            <element signature="e#21592#21593#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -2483,17 +2429,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/portal_js/base-v1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding>
-            <marker date="1496761201899" expanded="true" signature="6816:6849" ph="..." />
-            <marker date="1496761201899" expanded="true" signature="7093:7107" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/portal_js/search_main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-299">
@@ -2593,16 +2528,6 @@
           <folding>
             <element signature="e#600#601#0" expanded="false" />
             <element signature="e#658#659#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="703" column="3" lean-forward="true" selection-start-line="703" selection-start-column="3" selection-end-line="703" selection-end-column="3" />
-          <folding>
-            <marker date="1496557354366" expanded="true" signature="112814:112827" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2708,8 +2633,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/item.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="345" column="88" lean-forward="true" selection-start-line="345" selection-start-column="88" selection-end-line="345" selection-end-column="88" />
+        <state relative-caret-position="426">
+          <caret line="46" column="56" lean-forward="false" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
           <folding>
             <element signature="n#style#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1496898015998" expanded="true" signature="29829:29842" ph="..." />
@@ -2717,9 +2642,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/static/portal_js/base-v1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="62" lean-forward="false" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+          <folding>
+            <marker date="1496923973976" expanded="true" signature="6816:6849" ph="..." />
+            <marker date="1496923973976" expanded="true" signature="7093:7107" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="45" column="116" lean-forward="true" selection-start-line="45" selection-start-column="116" selection-end-line="45" selection-end-column="116" />
+          <folding>
+            <marker date="1496906861456" expanded="true" signature="112850:112863" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/ItemParamItemMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
+        <state relative-caret-position="160">
           <caret line="41" column="6" lean-forward="true" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
           <folding />
         </state>
@@ -2727,8 +2673,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/manager/service/ItemParamItemService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="59" column="29" lean-forward="false" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+        <state relative-caret-position="-74">
+          <caret line="35" column="75" lean-forward="true" selection-start-line="35" selection-start-column="75" selection-end-line="35" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2737,11 +2683,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/portal/controller/PortalItemController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="42" column="53" lean-forward="true" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+        <state relative-caret-position="262">
+          <caret line="45" column="11" lean-forward="true" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1617#1632#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1539">
+          <caret line="87" column="22" lean-forward="true" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="59" column="9" lean-forward="false" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/model/TaoTaoResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/portal/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="61" column="31" lean-forward="true" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/java/app/portal/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="57" column="30" lean-forward="true" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#922#923#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="e#1264#1265#0" expanded="true" />
+            <element signature="e#1395#1396#0" expanded="true" />
+            <element signature="e#1447#1448#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../xdcao_taotao_springboot/src/main/resources/templates/portal/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="64" column="40" lean-forward="true" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
