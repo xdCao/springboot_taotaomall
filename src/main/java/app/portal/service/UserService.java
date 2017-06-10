@@ -4,6 +4,7 @@ import app.mapper.UserMapper;
 import app.model.TaoTaoResult;
 import app.pojo.User;
 import app.utils.CookieUtil;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.DigestUtils;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -23,7 +25,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by xdcao on 2017/6/8.
  */
-@Service
+@Service(value = "UserService")
 public class UserService {
 
     @Autowired
@@ -92,4 +94,23 @@ public class UserService {
             return new TaoTaoResult(500,"",null);
         }
     }
+
+    public boolean getUserByToken(HttpServletRequest request,HttpServletResponse response){
+
+        Cookie token = CookieUtil.getCookieByName(request,"TT_TOKEN");
+
+        if (token==null) {
+            return false;
+        }else {
+            boolean exsit=redisTemplate.hasKey(token.getValue());
+            if (exsit){
+                ValueOperations<String,User> operations=redisTemplate.opsForValue();
+                User user=operations.get(token.getValue());
+                return true;
+            }else {
+                return false;
+            }
+        }
+    }
+
 }

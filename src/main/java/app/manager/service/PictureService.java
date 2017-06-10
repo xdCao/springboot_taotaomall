@@ -14,7 +14,7 @@ import java.net.UnknownHostException;
 @Service
 public class PictureService {
 
-    private static String filepath="D:/upload";
+    private static String filepath="D:/mobileTmp";
     private static String baseUrl="http://";
 
     public PictureResult uploadPicture(MultipartFile pic) {
@@ -27,7 +27,7 @@ public class PictureService {
             return pictureResult;
         }
 
-        String picName=pic.getOriginalFilename();
+        String picName=System.currentTimeMillis()+pic.getOriginalFilename();
         File file=new File(filepath,picName);
         try {
             FileOutputStream fileOutputStream=new FileOutputStream(file);
